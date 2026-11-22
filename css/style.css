@@ -11,6 +11,8 @@
   --brass: #c6a266;
   --brass-strong: #dcbd86;
   --brass-deep: #80622f;
+  --btn: #a68c62;
+  --btn-hover: #b59b70;
   --line-dark: rgba(198, 162, 102, .24);
   --line-light: rgba(32, 38, 45, .15);
   --sans: "Montserrat", "Segoe UI", Arial, sans-serif;
@@ -63,11 +65,11 @@ h3 { font-family: var(--sans); font-size: 21px; font-weight: 500; line-height: 1
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 54px; padding: 13px 30px;
-  border: 1px solid var(--brass); background: var(--brass); color: var(--ink);
+  border: 1px solid var(--btn); background: var(--btn); color: var(--ink);
   font-size: 15px; font-weight: 700; text-align: center; text-decoration: none;
   transition: background-color .2s, border-color .2s, color .2s;
 }
-.btn:hover { border-color: var(--brass-strong); background: var(--brass-strong); }
+.btn:hover { border-color: var(--btn-hover); background: var(--btn-hover); }
 .btn-ghost { background: transparent; color: var(--on-dark); border-color: rgba(243, 238, 229, .35); }
 .btn-ghost:hover { background: transparent; border-color: var(--brass); color: var(--brass-strong); }
 .btn-small { min-height: 42px; padding: 8px 20px; font-size: 14px; }
@@ -120,7 +122,7 @@ h3 { font-family: var(--sans); font-size: 21px; font-weight: 500; line-height: 1
 }
 .hero-wreath, .hero-helmet { position: absolute; height: auto; }
 .hero-wreath { inset: 0; width: 100%; animation: wreath-spin 90s linear infinite; will-change: transform; }
-.hero-helmet { top: 11%; left: 11%; width: 78%; }
+.hero-helmet { top: -3.94%; left: -3.94%; width: 107.89%; max-width: none; }
 @keyframes wreath-spin { to { transform: rotate(360deg); } }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, .75fr); gap: clamp(40px, 7vw, 104px); align-items: end; }
 .hero .eyebrow { color: var(--brass-strong); }
@@ -288,7 +290,7 @@ details p { max-width: 42em; padding: 0 44px 24px 0; color: var(--muted); font-s
     display: flex; align-items: center; justify-content: center;
     min-height: calc(60px + env(safe-area-inset-bottom, 0px));
     padding-bottom: env(safe-area-inset-bottom, 0px);
-    background: var(--brass); color: var(--ink);
+    background: var(--btn); color: var(--ink);
     font-size: 15px; font-weight: 700; text-decoration: none;
   }
   .site-header.is-open ~ .mobile-cta { display: none; }
