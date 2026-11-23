@@ -34,8 +34,8 @@
 
       <nav class="site-nav" id="site-nav" aria-label="Основне меню">
         <a href="#practice">Напрями</a>
-        <a href="#process">Як ми працюємо</a>
         <a href="#team">Адвокати</a>
+        <a href="#process">Як ми працюємо</a>
         <a href="#faq">Питання</a>
         <a href="#contacts">Контакти</a>
       </nav>
@@ -57,7 +57,10 @@
 
         <div class="hero-emblem" aria-hidden="true">
           <img class="hero-wreath" src="assets/logo-wreath.png" width="1000" height="1000" alt="">
-          <img class="hero-helmet" src="assets/logo-helmet.png" width="1000" height="1000" alt="">
+          <div class="hero-core">
+            <img class="hero-helmet" src="assets/logo-helmet.png" width="1000" height="1000" alt="">
+            <img class="hero-shine" src="assets/logo-shine.png" width="1000" height="1000" alt="">
+          </div>
         </div>
 
         <aside class="hero-card" aria-label="Графік прийому">
@@ -104,7 +107,41 @@
       </div>
     </section>
 
-    <section class="section section-dark" id="process">
+    <section class="section section-dark" id="team">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Адвокати</p>
+          <h2>До кого ви звертаєтесь</h2>
+        </header>
+
+        <div class="team-grid">
+          <article class="lawyer reveal">
+            <div class="monogram" aria-hidden="true">ДБ</div>
+            <div>
+              <h3>Денис Бондарець</h3>
+              <p>Консультація, правова позиція та представництво інтересів клієнта.</p>
+              <a class="phone" href="tel:+380955659399">+380 95 565 9399</a>
+            </div>
+          </article>
+          <article class="lawyer reveal">
+            <div class="monogram" aria-hidden="true">ВК</div>
+            <div>
+              <h3>Владислав Ковальчук</h3>
+              <p>Консультація, правова позиція та представництво інтересів клієнта.</p>
+              <a class="phone" href="tel:+380502371782">+380 50 237 1782</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="principles reveal">
+          <div><h3>Конфіденційність</h3><p>Обставини вашого звернення захищені адвокатською таємницею.</p></div>
+          <div><h3>Зрозуміла мова</h3><p>Пояснюємо ризики та варіанти дій без зайвих термінів.</p></div>
+          <div><h3>Чесна оцінка</h3><p>Не обіцяємо результат, який неможливо гарантувати.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
       <div class="container">
         <header class="section-head reveal">
           <p class="eyebrow">Як ми працюємо</p>
@@ -117,40 +154,6 @@
           <li class="reveal"><h3>Підтвердження</h3><p>Адвокат підтвердить запис або запропонує інший час.</p></li>
           <li class="reveal"><h3>Консультація</h3><p>Розберемо обставини, документи та можливі дії.</p></li>
         </ol>
-      </div>
-    </section>
-
-    <section class="section" id="team">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow">Адвокати</p>
-          <h2>До кого ви звертаєтесь</h2>
-        </header>
-
-        <div class="team-grid">
-          <article class="lawyer reveal">
-            <div class="monogram" aria-hidden="true">Д</div>
-            <div>
-              <h3>Адвокат Денис</h3>
-              <p>Консультація, правова позиція та представництво інтересів клієнта.</p>
-              <a class="phone" href="tel:+380955659399">+380 95 565 9399</a>
-            </div>
-          </article>
-          <article class="lawyer reveal">
-            <div class="monogram" aria-hidden="true">В</div>
-            <div>
-              <h3>Адвокат Владислав</h3>
-              <p>Консультація, правова позиція та представництво інтересів клієнта.</p>
-              <a class="phone" href="tel:+380502371782">+380 50 237 1782</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="principles reveal">
-          <div><h3>Конфіденційність</h3><p>Обставини вашого звернення захищені адвокатською таємницею.</p></div>
-          <div><h3>Зрозуміла мова</h3><p>Пояснюємо ризики та варіанти дій без зайвих термінів.</p></div>
-          <div><h3>Чесна оцінка</h3><p>Не обіцяємо результат, який неможливо гарантувати.</p></div>
-        </div>
       </div>
     </section>
 
@@ -206,8 +209,8 @@
         </header>
 
         <dl class="contact-list reveal">
-          <div><dt>Адвокат Денис</dt><dd><a href="tel:+380955659399">+380 95 565 9399</a></dd></div>
-          <div><dt>Адвокат Владислав</dt><dd><a href="tel:+380502371782">+380 50 237 1782</a></dd></div>
+          <div><dt>Адвокат Денис Бондарець</dt><dd><a href="tel:+380955659399">+380 95 565 9399</a></dd></div>
+          <div><dt>Адвокат Владислав Ковальчук</dt><dd><a href="tel:+380502371782">+380 50 237 1782</a></dd></div>
           <div><dt>Telegram</dt><dd><a href="https://t.me/vash_advokat_ua_bot" target="_blank" rel="noopener">@vash_advokat_ua_bot</a></dd></div>
           <div><dt>Графік</dt><dd>Пн–Пт, 09:00–18:00</dd></div>
           <div><dt>Адреса</dt><dd><a class="contact-address" href="https://www.google.com/maps/search/%D0%B1%D1%96%D0%B7%D0%BD%D0%B5%D1%81+%D1%86%D0%B5%D0%BD%D1%82%D1%80+%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0+%D0%BA%D0%BE%D1%82%D0%BB%D1%8F%D1%80%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE/@49.5851865,34.5500907,16.17z?entry=ttu&amp;g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Бізнес-центр «Сучасний дім»<br>м. Полтава, вул. Котляревського, 22б<br>4 поверх, офіс 403</a></dd></div>
