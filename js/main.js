@@ -20,13 +20,24 @@
       toggle.focus();
     }
   });
-  window.matchMedia("(min-width: 901px)").addEventListener("change", (event) => {
+  window.matchMedia("(min-width: 1181px)").addEventListener("change", (event) => {
     if (event.matches) setMenu(false);
   });
 
   const updateHeader = () => header.classList.toggle("is-scrolled", window.scrollY > 24);
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
+
+  // На телефоні нижня кнопка з'являється лише після того, як основна зникла з екрана.
+  const mobileCta = document.querySelector(".mobile-cta");
+  const heroActions = document.querySelector(".hero-actions");
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([entry]) => {
+      mobileCta.classList.toggle("is-shown", !entry.isIntersecting);
+    }).observe(heroActions);
+  } else {
+    mobileCta.classList.add("is-shown");
+  }
 
   const revealItems = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
